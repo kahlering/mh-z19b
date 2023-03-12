@@ -1,8 +1,9 @@
 # mh-z19b
 ## Usage
-Add this respository to your CMake project with add_subdirectory(). Now, you should be able to link the mh-z19b library with target_link_libraries(mh-z19b).
+Add this respository to your CMake project with add_subdirectory(). Now, you should be able to link the mh-z19b library with target_link_libraries(<target> mh-z19b). This should allow you to #include "mh-z19b.h" and start using the library functions.
 
 ## Examples
+https://github.com/kahlering/mh-z19b_examples
 
 
 
