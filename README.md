@@ -5,7 +5,7 @@ Add this respository to your CMake project with add_subdirectory(). Now, you sho
 
 ## Usage
 First, you have to register your platform specific uart tx, rx and discard buffer functions with mh_z19b_init().
-You have to use the following settings.
+You have to use the following settings for uart.
 
 | Setting | Value |
 | ------------- | ------------- |
