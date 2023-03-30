@@ -1,4 +1,3 @@
-#include <unistd.h>
 #include <stdint.h>
 #include "mh-z19b.h"
 
@@ -33,7 +32,7 @@ static uint8_t checksum(const uint8_t* const p){
 int mh_z19b_get_c02_ppm(void){
     uart_discard_input_f();
     uart_write_f(read_co2_req, sizeof(read_co2_req));
-    ssize_t bytes_recv = uart_read_f(rx_buffer, 9, RESP_TIMEOUT_MS);
+    int bytes_recv = uart_read_f(rx_buffer, 9, RESP_TIMEOUT_MS);
     if(bytes_recv != 9){
         return -1;
     }
